@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e5dcc5;
+  position: relative;
+  font-size: 14px;
+}
+.alert {
+  display: none;
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  margin: 0 auto;
+  width: 70%;
+}
+.logos {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 32px 7% 90px;
+  align-items: center;
+}
+.logos img {
+  width: 162px;
+}
+.coming-soon {
+  font-family: "DM Serif Display", serif;
+  text-transform: uppercase;
+  line-height: 0.8;
+  font-size: 20px;
+  text-align: center;
+}
+.logos p span {
+  font-size: 32px;
+}
+.bg {
+  width: 450px;
+  height: 980px;
+  background-image: url("resource/bg.png");
+  background-position: -30px;
+  background-size: cover;
+}
+
+.info {
+  margin: 0 auto;
+  max-width: 615px;
+  font-family: "lato";
+}
+
+.info h1 {
+  font-size: 64px;
+  font-weight: 500;
+}
+.info p {
+  margin: 20px auto;
+}
+
+footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-family: "lato";
+  width: 85%;
+  position: absolute;
+  bottom: 0;
+}
+
+.foot-content {
+  margin-left: 10%;
+}
+
+.msg {
+  font-size: 14px;
+  color: #014421;
+  text-transform: uppercase;
+  margin: 57px auto 29px;
+  font-weight: 900;
+}
+.highlight {
+  font-size: 16px;
+  font-weight: 900;
+  margin-bottom: 32px;
+}
+
+.row {
+  display: flex;
+  margin-bottom: 80px;
+}
+
+.row .note {
+  width: 470px;
+  padding: 0 45px 30px 0;
+  border-right: 1px solid #fff;
+  margin-right: 60px;
+  font-size: 16px;
+  font-weight: 300;
+  /* letter-spacing: 0.5px; */
+}
+
+.row i {
+  margin-right: 12px;
+}
+.connect {
+  margin-right: 65px;
+}
+
+.connect p:first-child,
+.social p:first-child {
+  text-decoration: underline;
+  margin-bottom: 15px;
+}
+
+.connect p:last-child {
+  margin-top: 9px;
+}
+
+.foot-end {
+  font-size: 12px;
+  text-align: center;
+  font-weight: 400;
+  color: #ffffff62;
+  margin-bottom: 10px;
+}
+
+/* =============================*/
+
+@media screen and (max-width: 1250px) {
+  .row .note {
+    font-size: 14px;
+    width: 350px;
+    padding-bottom: 20px;
+  }
+  .highlight {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .info {
+    max-width: 550px;
+  }
+  .info h1 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .card {
+    width: 100%;
+  }
+  .info {
+    max-width: 350px;
+  }
+  .info h1 {
+    font-size: 40px;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  .row .note {
+    font-size: 14px;
+    width: 500px;
+    margin-bottom: 30px;
+    padding-bottom: 0;
+    border: none;
+    margin-right: 0;
+  }
+  .msg {
+    margin-top: 40px;
+  }
+  .highlight {
+    margin-bottom: 10px;
+  }
+  .bg {
+    height: 800px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .logos p {
+    display: none;
+  }
+  .logos {
+    flex-direction: column;
+    margin: 45px auto 32px;
+    padding: 0;
+  }
+  .logos img {
+    width: 200px;
+    height: auto;
+  }
+  .main {
+    flex-direction: column;
+  }
+  .bg {
+    width: 100%;
+    height: 430px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .info {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2%;
+  }
+  .info h1 {
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .info p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .alert {
+    display: flex;
+    justify-content: space-between;
+    margin: 70px auto 100px;
+  }
+  .alert p {
+    margin: 0;
+    font-size: 20px;
+  }
+  .alert span {
+    font-size: 32px;
+  }
+  footer {
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: left;
+  }
+  .foot-content {
+    margin: 0;
+  }
+  .row {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: left;
+    margin-left: 5%;
+  }
+
+  .row .note {
+    width: 90%;
+    padding: 0;
+  }
+  .connect {
+    margin: 0;
+  }
+  .highlight {
+    padding: 1% 5%;
+  }
+  .connect p:first-child,
+  .social p:first-child {
+    margin-top: 20px;
+    margin-bottom: 3px;
+  }
+
+  .msg {
+    margin-left: 5%;
+    margin-bottom: 10px;
+  }
+}
